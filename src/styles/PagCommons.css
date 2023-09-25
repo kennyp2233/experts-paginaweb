@@ -1,0 +1,58 @@
+.pag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  height: 66%;
+  z-index: 1;
+  position: relative;
+  /*orgranizar de manera vertical*/
+  flex-direction: column;
+  /*para que el contenido no se salga*/
+  overflow-y: auto;
+
+}
+
+.pag h1 {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  margin: 1rem;
+
+}
+
+.pag p{
+  font-size: 1.5rem;
+  color: #fff;
+  /*justificado*/
+  margin: 1rem;
+  max-width: 40rem;
+  text-align: justify;  
+  
+}
+
+.animar {
+  animation: girarCircular 1s ease forwards;
+}
+
+@keyframes girarCircular {
+  0% {
+    transform: rotate(-90deg) translateX(-300%);
+  }
+
+  100% {
+    transform: rotate(0deg) translateX(0%);
+  }
+}
+
+@keyframes pag-in {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+
+}

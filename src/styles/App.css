@@ -1,27 +1,26 @@
 /*Una plantilla default para app tengo clases como app y appheader*/
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.App {
-  text-align: center;
+html,
+body,
+#root {
+  background-color: #F2F2F2;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  color: #F2F2F2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;  
-  min-height: 10vh;
+#root {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: top;
+  background-image: radial-gradient(circle, #F27405, #CA4949);
 }
-
